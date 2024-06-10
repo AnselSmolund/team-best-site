@@ -1,6 +1,5 @@
 import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import DirectionsRunIcon from "@mui/icons-material/DirectionsRun"; // Since there isn't a specific Strava icon, we'll use a running icon as a placeholder
 import EmailIcon from "@mui/icons-material/EmailOutlined";
 import { ReactComponent as StravaIcon } from "../assets/strava.svg";
 
