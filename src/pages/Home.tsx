@@ -16,7 +16,7 @@ export const Home: React.FC = () => {
         color: "white",
       }}
     >
-      <img src={bestLogo} height={300} />
+      <img src={bestLogo} height={300} alt="hellpo" />
       <h1 style={{ fontSize: "2rem" }}>website coming soon 😎</h1>
       <a
         style={{ color: "white" }}
