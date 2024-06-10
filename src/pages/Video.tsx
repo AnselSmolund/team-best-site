@@ -7,7 +7,6 @@ export const Video = () => {
       style={{
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
         height: "100vh",
         background: `url(${backgroundImg}) no-repeat center center`,
       }}

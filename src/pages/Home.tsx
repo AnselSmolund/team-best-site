@@ -19,7 +19,6 @@ export const Home: React.FC = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        paddingTop: 50,
         alignItems: "center",
         height: "100vh",
         background: `url(${backgroundImg}) no-repeat center center`,
@@ -60,7 +59,7 @@ export const Home: React.FC = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          marginTop: 30,
+          marginTop: 10,
           alignItems: "center",
         }}
       >
