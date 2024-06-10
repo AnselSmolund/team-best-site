@@ -1,8 +1,11 @@
 import React from "react";
 import backgroundImg from "../assets/purple.png";
 import bestLogo from "../assets/bestlogo.png";
+import duke from "../assets/duke.png";
+import { Links } from "../components/Links";
 
 export const Home: React.FC = () => {
+  const [dukeHeight, setDukeHeight] = React.useState(200);
   return (
     <div
       style={{
@@ -14,22 +17,31 @@ export const Home: React.FC = () => {
         background: `url(${backgroundImg}) no-repeat center center`,
         backgroundSize: "cover",
         color: "white",
+        cursor: "url(/pizza.png), auto",
       }}
     >
-      <img src={bestLogo} height={300} alt="hellpo" />
-      <h1 style={{ fontSize: "2rem" }}>website coming soon 😎</h1>
-      <a
-        style={{ color: "white" }}
-        href="https://www.instagram.com/teambest___/"
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignContent: "center",
+        }}
       >
-        instagram
-      </a>
-      <a style={{ color: "white" }} href="https://www.strava.com/clubs/731394">
-        strava
-      </a>
-      <a style={{ color: "white" }} href="mailto:teambestcyclingclub@gmail.com">
-        email
-      </a>
+        <img
+          src={bestLogo}
+          style={{ height: 200, width: "auto", objectFit: "cover" }}
+          alt="hellpo"
+        />
+        <img
+          src={duke}
+          style={{ height: dukeHeight, width: "auto", objectFit: "cover" }}
+          alt="duke"
+          onClick={() => setDukeHeight(dukeHeight + 10)}
+        />
+      </div>
+      <h1 style={{ fontSize: "2rem" }}>website coming soon 😎</h1>
+      <Links />
     </div>
   );
 };
