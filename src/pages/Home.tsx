@@ -11,13 +11,14 @@ export const Home: React.FC = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        paddingTop: 50,
         alignItems: "center",
         height: "100vh",
         background: `url(${backgroundImg}) no-repeat center center`,
         backgroundSize: "cover",
         color: "white",
         cursor: "url(/pizza.png), auto",
+        fontFamily: "monospace",
       }}
     >
       <div
@@ -40,8 +41,10 @@ export const Home: React.FC = () => {
           onClick={() => setDukeHeight(dukeHeight + 10)}
         />
       </div>
-      <h1 style={{ fontSize: "2rem" }}>website coming soon 😎</h1>
-      <Links />
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 40 }}>
+        <h1 style={{ fontSize: "1.5rem" }}>website coming soon 😎</h1>
+        <Links />
+      </div>
     </div>
   );
 };
