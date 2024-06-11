@@ -1,5 +1,4 @@
 import React from "react";
-import backgroundImg from "../assets/purple.png";
 
 export const Video = () => {
   return (
@@ -8,7 +7,6 @@ export const Video = () => {
         display: "flex",
         justifyContent: "center",
         height: "100vh",
-        background: `url(${backgroundImg}) no-repeat center center`,
       }}
     >
       <video width="80%" height="auto" controls autoPlay>

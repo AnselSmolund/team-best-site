@@ -1,5 +1,4 @@
 import React from "react";
-import backgroundImg from "../assets/purple.png";
 import bestLogo from "../assets/bestlogo.png";
 import duke from "../assets/duke.png";
 import { Links } from "../components/Links";
@@ -10,22 +9,12 @@ export const Home: React.FC = () => {
   const [dukeRotation, setDukeRotation] = React.useState(0);
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/video");
-  };
-
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        height: "100vh",
-        background: `url(${backgroundImg}) no-repeat center center`,
-        backgroundSize: "cover",
-        color: "white",
-        cursor: "url(/pizza.png), auto",
-        fontFamily: "monospace",
       }}
     >
       <div
@@ -65,10 +54,17 @@ export const Home: React.FC = () => {
       >
         <h2 style={{ fontSize: "1.5rem" }}>website coming soon 😎</h2>
         <p
-          onClick={handleClick}
+          onClick={() => navigate("/video")}
           style={{ padding: "10px 20px", fontSize: "16px" }}
         >
           clicky for fun video
+        </p>
+
+        <p
+          onClick={() => navigate("/rides")}
+          style={{ padding: "10px 20px", fontSize: "16px" }}
+        >
+          see some rides
         </p>
         <Links />
       </div>
